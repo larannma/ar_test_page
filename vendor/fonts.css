@@ -1,0 +1,20 @@
+@font-face {
+    src:url(./fonts/Montserrat-Regular.woff2) format('woff2'),
+        url(./fonts/Montserrat-Regular.woff) format('woff');
+    font-family: "Montserrat";
+    font-weight: 400;
+  }
+
+@font-face {
+  src:url(./fonts/Montserrat-Italic.woff2) format('woff2'),
+      url(./fonts/Montserrat-Italic.woff) format('woff');
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+@font-face {
+  src:url(./fonts/Montserrat-Black.woff2) format('woff2'),
+      url(./fonts/Montserrat-Black.woff) format('woff');
+  font-family: "Montserrat";
+  font-weight: 900;
+}
