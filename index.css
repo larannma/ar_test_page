@@ -39,7 +39,7 @@ body {
 }
 
 .main{
-    padding-bottom: 1050px;
+    padding-bottom: 1020px;
 }
 
 .main__title-highlight{
@@ -85,7 +85,6 @@ body {
 .footer{
     height: 100px;
     background-color: #FFF;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
