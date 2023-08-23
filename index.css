@@ -39,7 +39,7 @@ body {
 }
 
 .main{
-    padding-bottom: 1020px;
+    padding-bottom: 1050px;
 }
 
 .main__title-highlight{
@@ -86,6 +86,7 @@ body {
     height: 100px;
     background-color: #FFF;
     bottom: 0;
+    position: fixed;
     width: 100%;
 }
 
