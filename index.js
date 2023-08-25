@@ -30,12 +30,12 @@ function redirectWithTimeout(url){
 const platform = getMobileOS();
 const target = getQueryVariable();
 if (target == "Pokaz"){
-	pokaz_img.setAttribute('hidden', '');
+	pokaz_img.hidden = false
 } else if (target == "Cube"){
-	object_img.setAttribute('hidden', '');
+	object_img.hidden = false
 	highlightText.classList.add("main__title-highlight-object");
 } else if (target == "Theater"){
-	concert_img.setAttribute('hidden', '');
+	concert_img.hidden = false
 	highlightText.classList.add("main__title-highlight-concert");
 }
 
