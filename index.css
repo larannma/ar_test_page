@@ -20,15 +20,22 @@ body {
 
 .header__logo {
     margin: 0 auto;
-    padding-top: 107px;
+    padding-top: 80px;
     display: flex;
-    width: 133px;
+    width: 87px;
+}
+
+.header__info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .main__title{
     max-width: 350px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 70px;
     color: #FFF;
     text-align: center;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -39,12 +46,12 @@ body {
 }
 
 .main{
-    padding-bottom: 1050px;
+    padding-bottom: 550px;
 }
 
 .main__title-highlight{
     margin: 0;
-    background-color: #FF00E5; 
+    background-color: #F3794C; 
 }
 
 .main__sphere{
@@ -76,6 +83,8 @@ body {
     object-fit: cover; object-position: 100% 0;
     top: 300px;
     right: 0px;
+    /* margin-right: -100px; */
+    z-index: -1;
 }
 
 .main__torus{
@@ -86,7 +95,7 @@ body {
 }
 
 .footer{
-    height: 80px;
+    height: 75px;
     background-color: #FFF;
     position: fixed;
     bottom: 0;
@@ -115,7 +124,7 @@ body {
     font-weight: 700;
     line-height: 107.9%;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .main__timer-title{
     color: #FFF;
@@ -147,7 +156,7 @@ body {
     font-weight: 700;
     line-height: 107.9%;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .main__urban-walk-container{
@@ -155,9 +164,9 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    top: 740px;
+    top: 65px;
     left: 0px;
-    z-index: -1;
+    z-index: -2;
 }
 
 .main__vr-graphics-container{
@@ -171,7 +180,7 @@ body {
 }
 
 .main__urban-walk{
-    margin-left: -300px;
+    margin-left: -350px;
     margin-top: 0px;
 }
 
