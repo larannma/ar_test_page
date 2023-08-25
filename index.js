@@ -1,3 +1,10 @@
+const concert_img = document.getElementById('concert');
+const pokaz_img = document.getElementById('pokaz');
+const object_img = document.getElementById('object');
+
+const highlightText = document.querySelector('.main__title-highlight');
+
+
 const getMobileOS = () => {
     const ua = navigator.userAgent
     if (/android/i.test(ua)) {
@@ -22,6 +29,16 @@ function redirectWithTimeout(url){
 }
 const platform = getMobileOS();
 const target = getQueryVariable();
+if (target == "Pokaz"){
+	pokaz_img.setAttribute('hidden', '');
+} else if (target == "Cube"){
+	object_img.setAttribute('hidden', '');
+	highlightText.classList.add("main__title-highlight-object");
+} else if (target == "Theater"){
+	concert_img.setAttribute('hidden', '');
+	highlightText.classList.add("main__title-highlight-concert");
+}
+
 common_url = "https://space.brothersproduction.ru/";
 if (platform === "iOS") {
 	if (target == "Theater"){

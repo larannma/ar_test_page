@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="index.js"> </script>
 </head>
 <body class="root">
     <header class="header">
         <img class="header__logo" src="./images/logo.png">
-        <img class="header__info" src="./images/logo__info.svg">
+        <img id="pokaz" class="header__info" src="./images/ar-pokaz__logo.png" hidden>
+        <img id="concert" class="header__info" src="./images/ar-concert__logo.png" hidden>
+        <img id="object" class="header__info" src="./images/ar-object__logo.png" hidden>
     </header>
     <main class="root__section main">
         <p class="main__timer-value">0:03</p>
@@ -31,5 +32,6 @@
             <img class="footer__logo2" src="./images/logo1.svg">
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

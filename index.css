@@ -54,6 +54,16 @@ body {
     background-color: #F3794C; 
 }
 
+.main__title-highlight-concert{
+    margin: 0;
+    background-color: #FF00E5; 
+}
+
+.main__title-highlight-object{
+    margin: 0;
+    background-color: #AECC37; 
+}
+
 .main__sphere{
     width: 344px;
     margin-left: -50px;
