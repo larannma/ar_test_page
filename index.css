@@ -72,6 +72,17 @@ body {
     z-index: -3;
 }
 
+.mail__glasses{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.main__robot {
+    position: absolute;
+    right: 1%;
+}
+
 .main__image-container{
     position: absolute;
     width: 100%;
@@ -82,10 +93,16 @@ body {
     z-index: -1;
 }
 
+.main__cube{
+    margin-left: -580px;
+    margin-top: 80px;
+}
+
 .main__elipse{
     /* object-fit: cover; */
     margin-left: -300px;
-    margin-top: -10px;
+    margin-top: -200px;
+    transform: rotate(90deg);
 }
 
 .main__sneakers{
@@ -113,16 +130,25 @@ body {
 }
 
 .footer__container{
-    height: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__logo1{
-    margin-left: 40px;
-    margin-top: 24px;
+    width: 85px;
+    height: 36px;
 }
 
 .footer__logo2{
-    margin-left: 21px;
+    width: 94px;
+    height: 36px;
+}
+
+.footer__brothers-logo {
+    width: 157px;
+    height: 31px;
 }
 
 .main__timer-value{

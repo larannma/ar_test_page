@@ -1,6 +1,6 @@
-const concert_img = document.getElementById('concert');
-const pokaz_img = document.getElementById('pokaz');
-const object_img = document.getElementById('object');
+const concert_img = document.querySelector('.main__theatre');
+const pokaz_img = document.querySelector('.main__pokaz');
+const object_img = document.querySelector('.main__cube');
 
 const highlightText = document.querySelector('.main__title-highlight');
 
@@ -21,12 +21,35 @@ const getMobileOS = () => {
 function getQueryVariable() {
 	return window.location.search.substring(1);
 }
-const TIMEOUT = 2000
+
+const timerLabel = document.querySelector('.main__timer-value');
+let countdown = 3;
+
+
+function updateCountdown() {
+	if (countdown >= 0) {
+	  console.log(countdown);
+	  timerLabel.innerText = "0:0" + countdown
+	  countdown--;
+	  
+	  setTimeout(updateCountdown, 1000);
+	} else {
+	  console.log("done");
+	}
+  }
+
+
+
+const TIMEOUT = 3000
 function redirectWithTimeout(url){
+	
 	setTimeout(() => {
 		window.location.replace(url);
 	}, TIMEOUT);
 }
+
+updateCountdown()
+
 const platform = getMobileOS();
 const target = getQueryVariable();
 if (target == "Pokaz"){
