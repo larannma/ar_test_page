@@ -80,6 +80,7 @@ body {
 }
 
 .main__robot {
+    z-index: -10;
     position: absolute;
     right: 1%;
 }
