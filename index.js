@@ -4,6 +4,10 @@ const object_img = document.querySelector('.main__cube');
 
 const highlightText = document.querySelector('.main__title-highlight');
 
+const cube_usdz = document.querySelector('.cube-usdz');
+const pokaz_usdz = document.querySelector('.pokaz-usdz');
+const theatre_usdz = document.querySelector('.theatre-usdz');
+
 
 const getMobileOS = () => {
     const ua = navigator.userAgent
@@ -65,10 +69,13 @@ if (target == "Pokaz"){
 common_url = "https://space.brothersproduction.ru/";
 if (platform === "iOS") {
 	if (target == "Theater"){
+		theatre_usdz.hidden = false
 		redirectWithTimeout(common_url + "ar_iphone/theater.usdz");
 	} else if (target == "Cube"){
+		cube_usdz.hidden = false
 		alert("Unimpleneted yet: " + platform + " " + target);
 	} else if (target == "Pokaz"){
+		pokaz_usdz.hidden = false
 		alert("Unimpleneted yet: " + platform + " " + target);
 	}
 } else if (platform === "Android"){
