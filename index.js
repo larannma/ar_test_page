@@ -70,24 +70,19 @@ common_url = "https://space.brothersproduction.ru/";
 if (platform === "iOS") {
 	if (target == "Theater"){
 		theatre_usdz.hidden = false
-		redirectWithTimeout(common_url + "ar_iphone/theater.usdz");
 	} else if (target == "Cube"){
 		cube_usdz.hidden = false
-		alert("Unimpleneted yet: " + platform + " " + target);
 	} else if (target == "Pokaz"){
 		pokaz_usdz.hidden = false
-		alert("Unimpleneted yet: " + platform + " " + target);
 	}
 } else if (platform === "Android"){
 	if (target == "Theater"){
-		alert("Unimpleneted yet: " + platform + " " + target);
+		redirectWithTimeout("https://obuchash.8thwall.app/theatre");
 	}else if (target == "Cube"){
-		alert("Unimpleneted yet: " + platform + " " + target);
+		redirectWithTimeout("https://obuchash.8thwall.app/cube");
 	}else if (target == "Pokaz"){
-		alert("Unimpleneted yet: " + platform + " " + target);
+		redirectWithTimeout("https://obuchash.8thwall.app/pokaz/");
 	}
 } else {
 	alert("Wrong platform: " + platform + " " + target);
 }
-
-
