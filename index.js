@@ -13,6 +13,11 @@ const timer = document.querySelector('.main__timer-value');
 const timer_text = document.querySelector('.main__timer-title');
 
 
+//название в уголочке
+const pokaz_ribbon = document.getElementById('pokaz');
+const theatre_ribbon = document.getElementById('concert');
+const cube_ribbon = document.getElementById('object');
+
 const getMobileOS = () => {
     const ua = navigator.userAgent
     if (/android/i.test(ua)) {
@@ -60,11 +65,14 @@ const platform = getMobileOS();
 const target = getQueryVariable();
 if (target == "Pokaz"){
 	pokaz_img.hidden = false
+	pokaz_ribbon.hidden = false;
 } else if (target == "Cube"){
 	object_img.hidden = false
+	cube_ribbon.hidden = false
 	highlightText.classList.add("main__title-highlight-object");
 } else if (target == "Theater"){
-	concert_img.hidden = false
+	concert_img.hidden = false;
+	theatre_ribbon.hidden = false;
 	title.innerHTML = 'Садись на&nbsp;свободное&nbsp;место<p class="main__title-highlight">и&nbsp;запускай&nbsp;AR&nbsp;спектакль!</p>';
 	highlightText.classList.add("main__title-highlight-concert");
 }
