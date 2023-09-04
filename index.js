@@ -89,5 +89,5 @@ if (platform === "iOS") {
 		redirectWithTimeout("https://obuchash.8thwall.app/pokaz/");
 	}
 } else {
-	alert("Wrong platform: " + platform + " " + target);
+	//alert("Wrong platform: " + platform + " " + target);
 }
