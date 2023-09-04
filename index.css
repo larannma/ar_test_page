@@ -66,6 +66,7 @@ body {
 }
 
 .main__vpn{
+    position: absolute;
     margin-left: 235px;
     z-index: 50;
 }
@@ -86,20 +87,30 @@ body {
 }
 
 .main__robot {
-    z-index: -10;
+    position: absolute;
+    z-index: -8;
     position: absolute;
     right: 1%;
 }
-
-.main__image-container{
+.main__image-container_vpn{
+    z-index: -1;
     position: absolute;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     top: 0px;
     left: 0px;
-    z-index: -1;
 }
+.main__image-container{
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+}
+
 
 .main__cube{
     margin-left: -580px;
@@ -107,7 +118,8 @@ body {
 }
 
 .main__elipse{
-    z-index : -12;
+    z-index : -10;
+    position: absolute;
     /* object-fit: cover; */
     margin-left: -300px;
     margin-top: -200px;

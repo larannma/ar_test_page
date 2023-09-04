@@ -4,8 +4,6 @@ const object_img = document.querySelector('.main__cube');
 
 const title = document.querySelector('.main__title');
 const highlightText = document.querySelector('.main__title-highlight');
-console.log(title.innerText);
-console.log(highlightText.innerText);
 
 const cube_usdz = document.querySelector('.cube-usdz');
 const pokaz_usdz = document.querySelector('.pokaz-usdz');
@@ -38,13 +36,11 @@ let countdown = 3;
 
 function updateCountdown() {
 	if (countdown >= 0) {
-	  console.log(countdown);
 	  timerLabel.innerText = "0:0" + countdown
 	  countdown--;
 	  
 	  setTimeout(updateCountdown, 1000);
 	} else {
-	  console.log("done");
 	}
   }
 
