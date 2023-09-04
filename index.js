@@ -2,7 +2,10 @@ const concert_img = document.querySelector('.main__theatre');
 const pokaz_img = document.querySelector('.main__pokaz');
 const object_img = document.querySelector('.main__cube');
 
+const title = document.querySelector('.main__title');
 const highlightText = document.querySelector('.main__title-highlight');
+console.log(title.innerText);
+console.log(highlightText.innerText);
 
 const cube_usdz = document.querySelector('.cube-usdz');
 const pokaz_usdz = document.querySelector('.pokaz-usdz');
@@ -66,6 +69,7 @@ if (target == "Pokaz"){
 	highlightText.classList.add("main__title-highlight-object");
 } else if (target == "Theater"){
 	concert_img.hidden = false
+	title.innerHTML = 'Садись на&nbsp;свободное&nbsp;место<p class="main__title-highlight">и&nbsp;запускай&nbsp;AR&nbsp;спектакль!</p>';
 	highlightText.classList.add("main__title-highlight-concert");
 }
 
