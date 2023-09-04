@@ -8,6 +8,9 @@ const cube_usdz = document.querySelector('.cube-usdz');
 const pokaz_usdz = document.querySelector('.pokaz-usdz');
 const theatre_usdz = document.querySelector('.theatre-usdz');
 
+const timer = document.querySelector('.main__timer-value');
+const timer_text = document.querySelector('.main__timer-title');
+
 
 const getMobileOS = () => {
     const ua = navigator.userAgent
@@ -76,6 +79,8 @@ if (platform === "iOS") {
 		pokaz_usdz.hidden = false
 	}
 } else if (platform === "Android"){
+	timer.hidden = false;
+	timer_text.hidden = false;
 	if (target == "Theater"){
 		redirectWithTimeout("https://obuchash.8thwall.app/theatre");
 	}else if (target == "Cube"){
