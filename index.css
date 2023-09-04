@@ -67,7 +67,7 @@ body {
 
 .main__vpn{
     margin-left: 235px;
-    z-index: 1;
+    z-index: 50;
 }
 
 .main__sphere{
@@ -107,6 +107,7 @@ body {
 }
 
 .main__elipse{
+    z-index : -12;
     /* object-fit: cover; */
     margin-left: -300px;
     margin-top: -200px;
